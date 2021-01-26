@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Hello, world!</title>
+  </head>
+
+<style>
+ body{
+          background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+ }
+
+
+
+#box1{
+ display:block;position:absolute;top:230px;left:180px;width:480px;text-align:center;
+ }
+
+#box2{
+display:block;position:absolute;top:230px;left:180px;width:480px;text-align:center;
+}
+
+#content1{
+float:right;margin-top:20px;text-align:center;
+width:50%;
+height:200px;
+}
+
+#content2{
+  margin-top:0px;float:left;
+  width:50%;
+  height:200px;
+}
+
+#pic{
+border-style:groove;height:200px;width:200px;float:right;
+}
+
+#name{
+ width:95%;
+ display:inline-block;
+ overflow-x:scroll;
+}
+
+#n2{
+ width:15px;height:15px;display:none;
+}
+
+#n1{
+background-color:red;height:1px;width:95%;margin-left:0px;margin-top:0px;
+}
+
+#email{
+width:95%;
+ display:inline-block;
+ overflow-x:scroll;
+}
+#e2{
+ width:15px;height:15px;display:none;
+}
+#e1{
+background-color:red;height:1px;width:95%;margin-left:0px;margin-top:0px;
+}
+
+
+#contact{
+width:95%;
+display:inline-block;
+ overflow-x:scroll;
+}
+#c2{
+ width:15px;height:15px;display:none;
+}
+#c1{
+background-color:red;height:1px;width:95%;margin-left:0px;margin-top:0px;
+}
+
+
+
+#address{
+width:95%;
+ display:inline-block;
+ overflow-x:scroll;
+}
+#a2{
+ width:15px;height:15px;display:none;
+}
+#a1{
+background-color:red;height:1px;width:95%;margin-left:0px;margin-top:0px;
+}
+
+
+#city{
+width:87%;
+ display:inline-block;
+ overflow-x:scroll;
+}
+#ci1{
+background-color:red;height:1px;width:87%;margin-left:0px;margin-top:0px;
+}
+#ci2{
+ width:15px;height:15px;display:none;
+}
+
+#state{
+width:87%;
+display:inline-block;
+ overflow-x:scroll;
+}
+#s1{
+background-color:red;height:1px;width:87%;margin-left:0px;margin-top:0px;
+}
+#s2{
+ width:15px;height:15px;display:none;
+}
+
+#code{
+width:87%;
+ display:inline-block;
+ overflow-x:scroll;
+}
+#pc1{
+background-color:red;height:1px;width:87%;margin-left:0px;margin-top:0px;
+}
+#pc2{
+ width:15px;height:15px;display:none;
+}
+
+#country{
+width:87%;
+ display:inline-block;
+ overflow-x:scroll;
+}
+#co1{
+background-color:red;height:1px;width:87%;margin-left:0px;margin-top:0px;
+}
+#co2{
+ width:15px;height:15px;display:none;
+}
+
+
+    .form{
+        height:auto;
+        width:50%;
+        border-style:solid;
+        margin-left:auto;
+        margin-right:50px;
+        padding:30px;
+        margin-bottom:20px;
+        margin-top:30px;
+        float:right;
+    }
+
+    .fill{
+        border-style:none;
+        font-size: 0.8em;
+        background-color: transparent;
+    }
+
+
+    .label{
+        font-size:1em;
+    }
+
+    #photo{
+        height:200px;
+        width:200px;
+        border-style:groove;
+        position:absolute;
+        opacity:0;
+        z-index:0;
+    }
+
+    #submit:active{
+      font-size:1.2em;
+    }
+
+
+
+
+      .detail30{
+        width:100%;
+        height:30px;
+        background-color:#888C46;
+        margin-top:20px;
+        border:2px solid green;
+        text-align:center;
+        color:white;
+      }
+
+      .detail4{
+          line-height:0;
+          margin:20px;
+          opacity:1;
+      }
+
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+ .container1{
+          background-color:#888C46;
+          height:100px;
+          width:100%;
+          padding:10px;
+          line-height:7;
+          z-index:1;
+      }
+
+      #detail10{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+      }
+
+
+      .detail{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+         text-align:center;
+      }
+
+      .detail:hover{
+        background-color:green;
+      }
+
+      ul{
+        margin-top:0px;
+      }
+
+      .er{
+          display:block;
+          float:right;
+      }
+
+      #extent{
+          display:none;
+      }
+
+      ul li{
+        margin-top:5px;
+        height:40px;
+        line-height:3;
+        list-style:none;
+        float:right;
+        margin:10px;
+        border-radius:4px;
+        opacity:0.5;
+        text-decoration:none;
+      }
+
+
+
+      ul li a:hover{
+          background-color:green;
+      }
+
+      #qu{
+        width:100%;
+        height:400px;
+        background-color:#A4A4BF;
+        opacity:1;
+        color:#00FF00;
+        line-height:8;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+      #expand{
+          right:-180px;
+          top:10px;
+          height:400px;
+          width:200px;
+          position:absolute;
+          z-index:1;
+          text-align:center;
+          background-color:transparent;
+          line-height:1.4;
+          display:none;
+      }
+
+      .fire{
+          display:block;
+      }
+
+      #bresca{
+          font-size:3em;z-index:1;display:inline-block;font-weight:bold;line-height:1;text-shadow:2px 2px 5px #00FF00;letter-spacing:4px;margin-left:60px;position:relative;margin-top:20px;transform:scale(1.5px);
+      }
+
+      #fire2{
+          height:100px;width:130px;position:absolute;top:0px;left:235px;opacity:0.6;
+      }
+
+      #fire1{
+          height:100px;width:130px;position:absolute;top:0px;left:0px;opacity:0.6;
+      }
+
+      #line{
+         position:absolute;top:-270px;right:80px;z-index:1;cursor:pointer;font-size:6em;
+      }
+
+      #cross{
+        position:absolute;top:-120px;right:80px;z-index:1;cursor:pointer;font-size:3.2em;display:none;
+      }
+
+
+      #street{
+        width:100%;margin-top:300px;
+      }
+
+
+
+     @media all and (max-width:1024px){
+
+         #box1{
+           position:relative;
+           margin-left:auto;
+           margin-right:auto;
+           margin-top:50px;
+           top:0;
+           left:0;
+           width:80%;
+           display:block;
+         }
+
+         #street{
+           margin-top:50px;
+         }
+
+
+         #pc2{
+             display:none;
+             float:right;
+             width:13px;
+             height:13px;
+              margin-top:8px;
+         }
+
+         #co2{
+             display:none;
+             float:right;
+             width:13px;
+             height:13px;
+              margin-top:8px;
+         }
+
+
+         #ci2{
+             display:none;
+             float:right;
+             width:13px;
+             height:13px;
+             margin-top:8px;
+         }
+
+         #s2{
+             display:none;
+             float:right;
+             width:13px;
+             height:13px;
+             margin-top:8px;
+         }
+
+         #a2{
+             display:none;
+             float:right;
+             width:13px;
+             height:13px;
+             margin-top:8px;
+         }
+
+
+         #box2{
+           position:relative;
+           margin-left:auto;
+           margin-right:auto;
+           margin-top:10px;
+           top:0;
+           left:0;
+           width:80%;
+           display:block;
+         }
+
+         #waiter{
+             display:none;
+         }
+
+         .form{
+             width:100%;
+             margin-left:0px;
+             margin-right:0px;
+             float:none;
+         }
+
+         #content1{
+             float:none;
+             width:100%;
+
+         }
+
+         #content2{
+             float:none;
+             width:100%;
+         }
+
+         #pic{
+             float:none;
+             margin-left:auto;
+             margin-right:auto;
+         }
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+             width:100%;
+         }
+
+          .container1{
+              position:relative;
+          }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             padding-left:220px;
+             margin-right:0;
+             width:100%;
+         }
+
+
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+
+
+      }
+     @media all and (max-width:768px){
+         .form{
+             width:100%;
+             margin-left:0px;
+             margin-right:0px;
+             float:none;
+         }
+
+         #content1{
+             float:none;
+             width:100%;
+         }
+
+
+         #content2{
+             float:none;
+             width:100%;
+         }
+
+         #pic{
+             float:none;
+             margin-left:auto;
+             margin-right:auto;
+         }
+         .container1{
+              position:relative;
+          }
+
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+             width:100%;
+         }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             width:100%;
+             padding-left:190px;
+         }
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+
+      }
+
+     @media all and (max-width:414px){
+
+
+         .form{
+             width:100%;
+             margin-left:0px;
+             margin-right:0px;
+             float:none;
+         }
+
+         #content1{
+             float:none;
+             width:100%;
+
+         }
+
+
+         #content2{
+             float:none;
+             width:100%;
+         }
+
+         #pic{
+             float:none;
+             margin-left:auto;
+             margin-right:auto;
+         }
+         .container1{
+              position:relative;
+          }
+         #quote{
+             font-size:0.9em;
+         }
+
+         #emailfont{
+             font-size:1em;
+         }
+         #content1{
+              display:block;
+          }
+
+         #addfont{
+             font-size:1em;
+         }
+
+         .fill{
+             font-size:0.8em;
+         }
+
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+
+         }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             width:100%;
+             padding-left:50px;
+         }
+
+
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+  </style>
+  <body>
+
+
+
+<div  class="container1" >
+
+  <img id="fire1" src="/50.gif" >
+  <div id="bresca" >BRESCA</div>
+ <img id="fire2" src="/50.gif" >
+  <div class="er" >
+  <ul>
+  <li style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></li>
+  <li ><a href="/menu" id="detail10" >Menu</a></li>
+  <li ><a href="/about" id="detail10" >About</a></li>
+  <li ><a href="/gift" id="detail10" >Gift-Cards</a></li>
+  <li ><a href="/private" id="detail10" >Private-Event</a></li>
+  <li ><a href="/location" id="detail10" >Location</a></li>
+    <li ><a href="/" id="detail10" style="background-color:green" >Home</a></li>
+  </ul>
+  </div>
+
+<div id="extent">
+  <div id="line" >
+  &equiv;
+  </div>
+  <div id="cross" >
+  &#10060;
+  </div>
+  <div id="expand" >
+  <p style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></p>
+  <p><a href="/menu" class="detail" id="d1" >Menu</a></p>
+  <p><a href="/about" class="detail" id="d2">About</a></p>
+  <p><a href="/gift" class="detail" id="d3" >Gift-Cards</a></p>
+  <p><a href="/private" class="detail" id="d4">Private-Event</a></p>
+  <p><a href="/location" class="detail" id="d5" >Location</a></p>
+  <p><a href="/" class="detail" style="background-color:green" id="d6" >Home</a></p>
+  </div>
+</div>
+
+</div>
+
+
+
+<div  class="formbox" style="height:auto;display:block;position:relative;">
+
+
+   <%- include('partials/msg') %>
+
+
+   <img src="/37.gif" id="waiter" style="float:left;position:absolute;top:280px;left:180px">
+
+   <div class="form" style="float:right">
+
+
+   <form id="subscribe" style="height:auto;padding-top:10px;padding-bottom:10px" method="post" enctype="multipart/form-data" action="/career">
+
+
+
+   <div>
+     <div id="content1" >
+       <div id="pic" >
+        <input type="file" name="inputFile" onchange="readURL(this);"   accept="image/gif , image/jpeg , image/png"id="photo" >
+        <img id="show" src="#" style="display:none;margin-bottom:10px"/>
+        <h6 style="text-align:center" > Upload Photo</h6>
+        <h6 style="text-align:center">( Click Below )</h6>
+       </div>
+     </div>
+
+      <div id="content2" >
+
+        <label for="name" class="label">Name:<span style="color:red">*</span></label>
+        <br/>
+        <input name="name" onchange="name1();" "text" id="name" class="fill" >
+        <img class="tick" id="n2" src="/in.png" >
+
+        <hr id="n1" >
+
+        <label for="email" class="label">Email:<span style="color:red">*</span></label>
+        <br>
+        <input name="email" onchange="email1();" type="email" id="email" class="fill">
+        <img class="tick" id="e2" src="/in.png" >
+        <hr id="e1" >
+
+        <label for="contact" class="label">Contact:</label>
+        <br>
+        <input name="contact" onchange="contact1();" type="number" id="contact" class="fill" >
+        <img class="tick" id="c2" src="/in.png" >
+        <hr id="c1" >
+
+        </div>
+
+      </div>
+
+
+       <div id="street"  >
+        <label for="address" class="label" >Street Address:</label>
+        <br/>
+        <input name="address" onchange="address1();" type="text" id="address" class="fill" >
+        <img class="tick" id="a2" src="/in.png" >
+        <hr id="a1" >
+       </div>
+
+        <div style="float:left;width:50%;height:auto">
+         <label for="city" class="label" >City:</label>
+         <br>
+         <input name="city" onchange="city1();" type="text" id="city" class="fill" >
+         <img class="tick" id="ci2" src="/in.png">
+         <hr id="ci1" >
+        </div>
+
+        <div style="float:right;width:50%;height:auto">
+         <label for="state" class="label">State:</label>
+         <br>
+         <input name="state" onchange="state1();" type="text" id="state" class="fill" >
+         <img class="tick" id="s2" src="/in.png" >
+         <hr id="s1" >
+        </div>
+
+
+        <br/>
+        <br/>
+
+
+         <div style="float:left;width:50%;height:auto">
+          <label for="code" class="label">Postal-Code:</label>
+          <br>
+          <input name="code" onchange="code1();" type="number" id="code" class="fill" >
+          <img class="tick" id="pc2" src="/in.png" >
+          <hr id="pc1" >
+         </div>
+
+         <div style="float:right;width:50%;height:auto">
+          <label for="country" class="label">Country:</label>
+          <br>
+          <input name="country" onchange="country1();" type="text" id="country" class="fill" >
+          <img class="tick" id="co2" src="/in.png" >
+          <hr id="co1">
+         </div>
+
+
+       <div style="margin-top:150px">
+         <div>
+           Upload Cv
+           <span style="color:red">*</span>
+         </div>
+        <div class="input-group sm-1" >
+        <div class="custom-file" >
+        <input type="file" name="inputFile" />
+        </div>
+        </div>
+
+        <br/>
+
+        <button type="submit" id="submit" value="submit" style="border-radius:4px;font-size:1em" class="bg-primary">submit</button>
+      </div>
+    </form>
+
+    </div>
+
+</div>
+
+<br/>
+<br/>
+
+
+
+<div style="position:fixed;bottom:0;width:100%;background-color:#888C46;border:2px solid green;">
+   <p style="color:white;font-size:1em;text-align:center">For any querie Contact : 83079525346 Or mail at bresca@gmail.com  </p>
+</div>
+
+
+
+
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+   <script src="/career.js">
+
+</script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Hello, world!</title>
+  </head>
+
+<style>
+
+    body{
+        margin:0px;
+        padding:0px;padding-bottom:0px;
+
+          background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    }
+
+
+     #numpic{
+        height:50px;width:50px;margin-top:20px;display:inline-block;
+     }
+
+     #emailpic{
+        height:50px;width:50px;margin-top:20px;display:inline-block;
+     }
+
+    .infor{
+        height:600px;
+        width:43%;
+        margin-left:100px;
+        padding-top:10px;
+        padding-left:80px;
+        float:left;
+    }
+
+   .fill{
+        border-style:none;
+        font-size:1.2em;
+        width:90%;
+    }
+
+
+    .label{
+        font-size:1.5em;
+    }
+
+    .phone{
+        float:right;
+        margin-right:40px;
+        width:43%;
+        height:600%;
+        margin-left:100px;
+        text-align:center;
+    }
+
+    .map{
+        width:70%;
+        margin-left:auto;
+        margin-right:auto;
+        border-style:groove;
+        height:315px;
+        margin-top:0px;
+        background-image:url('/64.png');
+    }
+
+    #complain{
+        width:80%;
+        height:200px;
+        background-color:transparent;
+    }
+
+    #box1{
+        display:none;margin-left:auto;margin-right:auto;height:20px;width:300px;text-align:center;line-height:0px;
+    }
+
+    #box2{
+        display:none;margin-left:auto;margin-right:auto;height:20px;width:300px;text-align:center;line-height:0px;
+    }
+
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+ .container1{
+          background-color:#888C46;
+          height:100px;
+          width:100%;
+          padding:10px;
+          line-height:7;
+          z-index:1;
+      }
+
+      #detail10{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+      }
+
+
+      .detail{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+         text-align:center;
+      }
+
+
+
+      .detail:hover{
+        background-color:green;
+      }
+
+
+      ul{
+        margin-top:0px;
+      }
+
+      .er{
+          display:block;
+          float:right;
+      }
+
+      #extent{
+          display:none;
+      }
+
+
+      ul li{
+        margin-top:5px;
+        height:40px;
+        line-height:3;
+        list-style:none;
+        float:right;
+        margin:10px;
+        border-radius:4px;
+        opacity:0.5;
+        text-decoration:none;
+      }
+
+       #order_now:hover{
+        border:2px solid white;
+      }
+
+
+      ul li a:hover{
+          background-color:green;
+      }
+
+
+
+
+      #qu{
+        width:100%;
+        height:400px;
+        background-color:#A4A4BF;
+        opacity:1;
+        color:#00FF00;
+        line-height:8;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+        #expand{
+          right:-180px;
+          top:10px;
+          height:400px;
+          width:200px;
+          position:absolute;
+          z-index:1;
+          text-align:center;
+          background-color:transparent;
+          line-height:1.4;
+          display:none;
+      }
+
+
+      .fire{
+          display:block;
+      }
+
+      #bresca{
+          font-size:3em;z-index:1;display:inline-block;font-weight:bold;line-height:1;text-shadow:2px 2px 5px #00FF00;letter-spacing:4px;margin-left:60px;position:relative;margin-top:20px;transform:scale(1.5px);
+      }
+
+      #fire2{
+          height:100px;width:130px;position:absolute;top:0px;left:235px;opacity:0.6;
+      }
+
+      #fire1{
+          height:100px;width:130px;position:absolute;top:0px;left:0px;opacity:0.6;
+      }
+
+      #line{
+         position:absolute;top:-270px;right:80px;z-index:1;cursor:pointer;font-size:6em;
+      }
+
+      #cross{
+        position:absolute;top:-120px;right:80px;z-index:1;cursor:pointer;font-size:3.2em;display:none;
+      }
+
+
+
+
+
+      #hr1{
+         background-color:black;height:1px;width:90%;margin-left:0px;margin-top:0px;
+      }
+
+      #hr2{
+         background-color:black;height:1px;width:90%;margin-left:0px;margin-top:0px;
+      }
+
+     @media all and (max-width:1024px){
+           .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+             width:100%;
+         }
+
+          .container1{
+              position:relative;
+          }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             padding-left:220px;
+             margin-right:0;
+             width:100%;
+         }
+
+
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+
+      }
+     @media all and (max-width:768px){
+
+         .container1{
+              position:relative;
+          }
+
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+             width:100%;
+         }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             width:100%;
+             padding-left:190px;
+         }
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+      }
+
+     @media all and (max-width:414px){
+         .container1{
+              position:relative;
+          }
+         #quote{
+             font-size:0.9em;
+         }
+
+         #emailfont{
+             font-size:1em;
+         }
+         #content1{
+              display:block;
+          }
+
+         #addfont{
+             font-size:1em;
+         }
+
+         .fill{
+             font-size:0.8em;
+         }
+
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+
+         }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             width:100%;
+             padding-left:50px;
+         }
+
+
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+     @media all and (max-width:393px){
+         #quote{
+             font-size:0.9em;
+         }
+
+         #emailfont{
+             font-size:1em;
+         }
+         #content1{
+              display:block;
+          }
+
+         #addfont{
+             font-size:1em;
+         }
+
+         .fill{
+             font-size:0.8em;
+         }
+
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+         }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             width:100%;
+             padding-left:40px;
+          }
+
+
+
+         .container1{
+              position:relative;
+          }
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+     @media all and (max-width:375px){
+         #quote{
+             font-size:0.9em;
+         }
+
+         .container1{
+              position:relative;
+          }
+
+         #emailfont{
+             font-size:1em;
+         }
+         #content1{
+              display:block;
+          }
+
+         #addfont{
+             font-size:1em;
+         }
+
+         .fill{
+             font-size:0.8em;
+         }
+
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+
+         }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             padding-left:40px;
+             width:100%;
+         }
+
+
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+      @media all and (max-width:320px){
+         #quote{
+             font-size:0.9em;
+         }
+
+          .container1{
+              position:relative;
+          }
+
+         #emailfont{
+             font-size:1em;
+         }
+         #content1{
+              display:block;
+          }
+
+         #addfont{
+             font-size:1em;
+         }
+
+         .fill{
+             font-size:0.8em;
+         }
+
+         .phone{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             margin-top:100px;
+
+         }
+
+         .infor{
+             float:none;
+             margin-left:0;
+             margin-right:0;
+             padding-left:10px;
+             width:100%;
+         }
+
+
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+  </style>
+  <body>
+
+
+
+  <div  class="container1" >
+  <img id="fire1" src="/50.gif" >
+  <div id="bresca" >BRESCA</div>
+ <img id="fire2" src="/50.gif" >
+  <div class="er" >
+  <ul>
+  <li style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></li>
+  <li ><a href="/about" id="detail10" >About</a></li>
+  <li ><a href="/gift" id="detail10" >Gift-Cards</a></li>
+  <li ><a href="/private" id="detail10" >Private-Event</a></li>
+  <li ><a href="/location" id="detail10" >Location</a></li>
+    <li ><a href="/" id="detail10" style="background-color:green" >Home</a></li>
+  </ul>
+  </div>
+
+<div id="extent">
+<div id="line" >
+  &equiv;
+  </div>
+  <div id="cross" >
+  &#10060;
+  </div>
+  <div id="expand" >
+  <p style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></p>
+  <p><a href="/about" class="detail" id="d2">About</a></p>
+  <p><a href="/gift" class="detail" id="d3" >Gift-Cards</a></p>
+  <p><a href="/private" class="detail" id="d4">Private-Event</a></p>
+  <p><a href="/location" class="detail" id="d5" >Location</a></p>
+  <p><a href="/" class="detail" style="background-color:green" id="d6" >Home</a></p>
+  </div>
+</div>
+
+</div>
+
+<br/>
+
+ <div style="text-align:center;padding-top:0px">
+  <h2  style="text-align:center"> We <img src="/36.gif" style="width:35px;height:35px">love to help you </h2>
+  <h6 id="quote" style="text-align:center"> Our most unhappy customers are our greatest source of learning </h6>
+ </div>
+  <br>
+
+
+  <div id="box1"  class="alert alert-success" role="alert">
+  </div>
+
+  <div id="box2"  class="alert alert-warning" role="alert">
+  </div>
+
+<div>
+
+  <div class="infor">
+
+    <form id="complain" style="background-color:transparent" >
+
+        <label for="name" class="label">Name:<span style="color:red">*</span></label>
+        <br>
+        <input name="name" type="text" id="name" style="font-size:0.8em" class="fill" >
+        <hr id="hr1" >
+
+        <label for="email" class="label">Email:<span style="color:red">*</span></label>
+        <br>
+        <input name="email" type="email" id="email" style="font-size:0.8em" class="fill" >
+
+        <hr id="hr2" >
+        <br>
+        <textarea id="complain" name="complain"  placeholder=" Your Message :"></textarea>
+
+        <div style="margin-top:20px;margin-bottom:10px" class="g-recaptcha" data-sitekey="6LdSZQEVAAAAAOVq2oS-ZmU_K2zoDZU_Tv4XGa6j"></div>
+
+
+        <input type="submit" name="submit" value="Send" class="bg-primary">
+    </form>
+
+  </div>
+
+
+<div class="phone">
+
+   <div class="map">
+
+   </div>
+
+ <h5 id="addfont" style="text-align:center">2057/18 Rampura Mohalla Gali NO1 , Behind Elite Cinema Hisar Haryana</h5>
+
+  <br>
+
+  <div style="position:relative">
+
+   <div style="width:100%;display:flex;align-items:center;justify-content:center">
+   <img src="/62.gif" id="numpic" >
+   <h3 id="nofont" style="display:inline-block;margin-left:6%;">91-9999999999</h3>
+   </div>
+    <br>
+
+   <div style="width:100%;display:flex;align-items:center;justify-content:center">
+   <img src="/64.gif" id="emailpic" >
+   <h3 id="emailfont" style="display:inline-block;margin-left:6%;">gouravsingal2003@gmail.com</h3>
+   </div>
+
+  </div>
+
+  <hr style="border:1px solid black;width:75%">
+
+ <div style="width:100%;display:flex;align-items:center;justify-content:center;margin-top:10px">
+ <img src="/41.png" style="height:30px;width:30px;margin-right:10px">
+ <img src="/42.png" style="height:30px;width:30px;margin-right:10px">
+ <img src="/43.png" style="height:30px;width:30px;margin-right:10px">
+ <img src="/48.jpg" style="height:30px;width:30px;margin-right:10px">
+ <img src="/49.png" style="height:30px;width:30px">
+ </div>
+
+</div>
+</div>
+
+
+<div style="width:100%;height:40px;background-color:#888C46;border:2px solid green;text-align:center;margin-top:20px;position:fixed;bottom:0">
+<p style="text-align:center;color:white;font-size:1em"> Your Reviews are the key of success of our restaurant </p>
+</div>
+
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+<script src="/contact.js"></script>
+
+</body>
+
+
+</html>

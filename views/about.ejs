@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Hello, world!</title>
+  </head>
+
+  <style>
+
+      body{
+          background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+          position:relative;
+      }
+
+      #d1:hover{
+       background-color:green;
+      }
+
+      #d2:hover{
+       background-color:green;
+      }
+
+      #d3:hover{
+      background-color:green;
+      }
+
+      #d4:hover{
+      background-color:green;
+      }
+
+      #d5:hover{
+      background-color:green;
+      }
+
+      #d6:hover{
+      background-color:green;
+      }
+
+
+     .container1{
+          background-color:#888C46;
+          height:100px;
+          width:100%;
+          padding:10px;
+          line-height:7;
+          z-index:1;
+      }
+
+      #detail10{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+      }
+
+
+      .detail{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+         text-align:center;
+      }
+
+
+
+      .detail:hover{
+        background-color:green;
+      }
+
+
+      ul{
+        margin-top:0px;
+      }
+
+      .er{
+          display:block;
+          float:right;
+      }
+
+      #extent{
+          display:none;
+      }
+
+
+      ul li{
+        margin-top:5px;
+        height:40px;
+        line-height:3;
+        list-style:none;
+        float:right;
+        margin:10px;
+        border-radius:4px;
+        opacity:0.5;
+        text-decoration:none;
+      }
+
+       #order_now:hover{
+        border:2px solid white;
+      }
+
+
+      ul li a:hover{
+          background-color:green;
+      }
+
+      #qu{
+        width:100%;
+        height:400px;
+        background-color:#A4A4BF;
+        opacity:1;
+        color:#00FF00;
+        line-height:8;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+
+
+
+
+
+      #expand{
+          right:-180px;
+          top:10px;
+          height:400px;
+          width:200px;
+          position:absolute;
+          z-index:1;
+          text-align:center;
+          background-color:transparent;
+          line-height:1.4;
+          display:none;
+      }
+
+
+
+      .fire{
+          display:block;
+      }
+
+      #bresca{
+          font-size:3em;z-index:1;display:inline-block;font-weight:bold;line-height:1;text-shadow:2px 2px 5px #00FF00;letter-spacing:4px;margin-left:60px;position:relative;margin-top:20px;transform:scale(1.5px);
+      }
+
+      #fire2{
+          height:100px;width:130px;position:absolute;top:0px;left:235px;opacity:0.6;
+      }
+
+      #fire1{
+          height:100px;width:130px;position:absolute;top:0px;left:0px;opacity:0.6;
+      }
+
+      #line{
+         position:absolute;top:-270px;right:80px;z-index:1;cursor:pointer;font-size:6em;
+      }
+
+      #cross{
+        position:absolute;top:-120px;right:80px;z-index:1;cursor:pointer;font-size:3.2em;display:none;
+      }
+
+      #special{
+        width:100%;
+        height:30px;background-color:#888C46;border:2px solid green;
+        margin-top:0px;
+        position: fixed;
+        bottom:0px;
+      }
+
+      .photo{
+        background-image:url('/chef_pic.jpg');
+        width:80%;
+        height:600px;
+        background-repeat:no-repeat;
+        background-size:100%;
+        background-attachment: fixed;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom:100px;
+      }
+
+
+
+    @media all and (max-width:1024px){
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+      }
+
+     @media all and (max-width:768px){
+
+          .photo{
+            background-attachment: local;
+            height:250px;
+            margin-bottom: 40px;
+          }
+
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+
+      }
+
+     @media all and (max-width:414px){
+
+
+
+       .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+     @media all and (max-width:393px){
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+     @media all and (max-width:375px){
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+     @media all and (max-width:320px){
+
+
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+  </style>
+  <body>
+
+
+
+  <div  class="container1" >
+  <img id="fire1" src="/50.gif" >
+  <div id="bresca" >BRESCA</div>
+ <img id="fire2" src="/50.gif" >
+  <div class="er" >
+  <ul>
+  <li style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></li>
+  <li ><a href="/about" id="detail10" style="background-color:green" >About</a></li>
+  <li ><a href="/gift" id="detail10" >Gift-Cards</a></li>
+  <li ><a href="/private" id="detail10" >Private-Event</a></li>
+  <li ><a href="/location" id="detail10" >Location</a></li>
+    <li ><a href="/" id="detail10" >Home</a></li>
+  </ul>
+  </div>
+
+<div id="extent">
+<div id="line" >
+  &equiv;
+  </div>
+  <div id="cross" >
+  &#10060;
+  </div>
+  <div id="expand" >
+  <p style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></p>
+  <p><a href="/about" class="detail" style="background-color:green" id="d2">About</a></p>
+  <p><a href="/gift" class="detail" id="d3" >Gift-Cards</a></p>
+  <p><a href="/private" class="detail" id="d4">Private-Event</a></p>
+  <p><a href="/location" class="detail" id="d5" >Location</a></p>
+  <p><a href="/" class="detail"  id="d6" >Home</a></p>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<br>
+<h2 style="text-align:center"> <b>DON'T UNDERESTIMATE US</b> </h2>
+<br>
+<div class="photo"></div>
+
+
+     <div style="display:flex;flex-flow:row wrap;justify-content:space-around;">
+
+      <div style="width:250px;height:260px;margin:30px">
+       <img src="chef1.jpg" style="width:100%;height:250px" />
+       <h3 style="width:100%;"><b>Owner</b></h3>
+      </div>
+
+      <div style="width:250px;height:260px;margin:30px">
+       <img src="chef1.jpg" style="width:100%;height:250px" />
+       <h3 style="width:100%;"><b>Head Chef</b></h3>
+      </div>
+
+      <div style="width:250px;height:260px;margin:30px">
+       <img src="chef1.jpg" style="width:100%;height:250px" />
+       <h3 style="width:100%;"><b>Suse Chef</b></h3>
+      </div>
+
+      <div style="width:250px;height:260px;margin:30px">
+       <img src="chef1.jpg" style="width:100%;height:250px" />
+       <h3 style="width:100%;"><b>Suse Chef</b></h3>
+      </div>
+
+
+     </div>
+
+
+     <div style="display:flex;flex-flow:row wrap;justify-content:space-around;">
+
+      <div style="width:250px;height:260px;margin:30px">
+       <img src="chef1.jpg" style="width:100%;height:250px" />
+       <h3 style="width:100%;"><b>Owner</b></h3>
+      </div>
+
+      <div style="width:250px;height:260px;margin:30px">
+       <img src="chef1.jpg" style="width:100%;height:250px" />
+       <h3 style="width:100%;"><b>Head Chef</b></h3>
+      </div>
+
+      <div style="width:250px;height:260px;margin:30px">
+       <img src="chef1.jpg" style="width:100%;height:250px" />
+       <h3 style="width:100%;"><b>Suse Chef</b></h3>
+      </div>
+
+     </div>
+ <br/>
+ <br/>
+
+  <div id="special" >
+  <p style="text-align:center;color:white;font-size:1em">Our Speciality is not our food , it is our Chef</p>
+  </div>
+
+
+
+     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+         $("#line").click(function(){
+         anime({
+           targets: '#information',
+           opacity: 0.2,
+           duration: 100
+          })
+         $("#expand").css("display","block");
+         $(this).css("display","none");
+         $("#cross").css("display","block");
+         console.log(window.outerWidth);
+         if( window.outerWidth > 414 ){
+          anime({
+           targets: '#expand',
+           right: 120,
+           duration: 1000
+          });
+         }else{
+          console.log(414);
+          anime({
+           targets: '#expand',
+           right: -20,
+           duration: 1000
+          });
+         }
+     })
+
+      $("#cross").click(function(){
+
+         $(this).css("display","none");
+          anime({
+           targets: '#information',
+           opacity: 1,
+           duration: 100
+          })
+         $("#line").css("display","block");
+          anime({
+           targets: '#expand',
+           right: -190,
+           duration: 1000
+          });
+         $("#expand").css("display","none");
+      })
+})
+
+
+
+    </script>
+    </body>
+
+</html>

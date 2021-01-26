@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Hello, world!</title>
+  </head>
+
+  <style>
+
+    body{
+      background-image: url('abc.jpg');
+      background-size: cover;
+    }
+
+
+    .container1{
+      background-color:#888C46;
+      height:100px;
+      width:100%;
+      padding:10px;
+      line-height:7;
+      position:relative;
+      z-index:1;
+    }
+
+
+
+  .grow1 { transition: all .2s ease-in-out; }
+  .grow1:hover { transform: scale(1.5); }
+
+  .grow2 { transition: all .2s ease-in-out; }
+  .grow2:hover { transform: scale(1.3); }
+
+  .grow3 { transition: all .2s ease-in-out; }
+  .grow3:hover { transform: scale(1.3); }
+
+  .grow4 { transition: all .2s ease-in-out; }
+  .grow4:hover { transform: scale(1.3); }
+
+  .grow5 { transition: all .2s ease-in-out; }
+  .grow5:hover { transform: scale(1.3); }
+
+  .grow6 { transition: all .2s ease-in-out; }
+  .grow6:hover { transform: scale(1.3); }
+
+  .grow7 { transition: all .2s ease-in-out; }
+  .grow7:hover { transform: scale(1.3); }
+
+  .grow8 { transition: all .2s ease-in-out; }
+  .grow8:hover { transform: scale(1.3); }
+
+
+
+
+      #detail10{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+      }
+
+
+      .detail{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+         text-align:center;
+      }
+
+
+
+      .detail:hover{
+        background-color:green;
+      }
+
+
+      ul{
+        margin-top:0px;
+      }
+
+      .er{
+          display:block;
+          float:right;
+      }
+
+      #extent{
+          display:none;
+      }
+
+
+      ul li{
+        margin-top:5px;
+        height:40px;
+        line-height:3;
+        list-style:none;
+        float:right;
+        margin:10px;
+        border-radius:4px;
+        opacity:0.5;
+        text-decoration:none;
+      }
+
+            #d1:hover{
+      background-color:green;
+      }
+
+      #d2:hover{
+      background-color:green;
+      }
+
+      #d3:hover{
+      background-color:green;
+      }
+
+      #d4:hover{
+      background-color:green;
+      }
+
+      #d5:hover{
+      background-color:green;
+      }
+
+      #d6:hover{
+      background-color:green;
+      }
+
+       #order_now:hover{
+        border:2px solid white;
+      }
+
+
+      ul li a:hover{
+          background-color:green;
+      }
+
+
+
+
+      #qu{
+        width:100%;
+        height:400px;
+        background-color:#A4A4BF;
+        opacity:1;
+        color:#00FF00;
+        line-height:8;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+
+
+
+
+      #expand{
+          right:-180px;
+          top:10px;
+          height:400px;
+          width:200px;
+          position:absolute;
+          z-index:1;
+          text-align:center;
+          background-color:transparent;
+          line-height:1.4;
+          display:none;
+      }
+
+
+
+      .fire{
+          display:block;
+      }
+
+      #bresca{
+          font-size:3em;z-index:1;display:inline-block;font-weight:bold;line-height:1;text-shadow:2px 2px 5px #00FF00;letter-spacing:4px;margin-left:60px;position:relative;margin-top:20px;transform:scale(1.5px);
+      }
+
+      #fire2{
+          height:100px;width:130px;position:absolute;top:0px;left:235px;opacity:0.6;
+      }
+
+      #fire1{
+          height:100px;width:130px;position:absolute;top:0px;left:0px;opacity:0.6;
+      }
+
+      #line{
+         position:absolute;top:-270px;right:80px;z-index:1;cursor:pointer;font-size:6em;
+      }
+
+     #cross{
+      position:absolute;top:-120px;right:80px;z-index:1;cursor:pointer;font-size:3.2em;display:none;
+     }
+
+     #information{
+      text-align:center;
+      margin-right:100px;
+      display: inline-block;
+      width:50%;
+     }
+
+     #map{
+      height:600px;width:50%;
+      background-image:url('/map.png');
+      border:2px solid grey;
+      margin-left:100px;
+      display: inline-block;
+     }
+
+     .page_content{
+       padding:100px;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+     }
+
+     @media all and (max-width:1024px){
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          .page_content{
+            display: block;
+            padding:20px;
+          }
+
+          #information{
+            display: block;
+            margin-right:auto;
+            width:100%;
+            margin-left: auto;
+          }
+
+          #map{
+            display: block;
+            margin-right:auto;
+            width:100%;
+            margin-left: auto;
+            height:400px;
+            margin-top:200px;
+          }
+
+      }
+
+     @media all and (max-width:768px){
+
+         body{
+           background-image: url('bcd.jpg');
+           background-size: cover;
+         }
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #map{
+            margin-top:0px;
+          }
+
+      }
+
+     @media all and (max-width:414px){
+
+       .er{
+              display:none;
+          }
+
+          #extent{
+            display:block;
+          }
+
+
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+     @media all and (max-width:393px){
+        .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+     @media all and (max-width:375px){
+       .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+      @media all and (max-width:320px){
+         .er{
+              display:none;
+          }
+
+          #extent{
+              display:block;
+          }
+
+          #expand{
+              top:80px;
+              line-height:0.8em;
+          }
+
+          #bresca{
+              font-size:2em;
+          }
+
+          #fire2{
+              left:160px;
+          }
+
+
+          #line{
+              right:20px;
+          }
+
+          #cross{
+              right:20px;
+          }
+      }
+
+  </style>
+  <body>
+
+
+
+  <div  class="container1" >
+  <img id="fire1" src="/50.gif" >
+  <div id="bresca" >BRESCA</div>
+ <img id="fire2" src="/50.gif" >
+  <div class="er" >
+  <ul>
+  <li style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></li>
+  <li ><a href="/about" id="detail10" >About</a></li>
+  <li ><a href="/gift" id="detail10" >Gift-Cards</a></li>
+  <li ><a href="/private" id="detail10" >Private-Event</a></li>
+  <li ><a href="/location" id="detail10" style="background-color:green" >Location</a></li>
+    <li ><a href="/" id="detail10"  >Home</a></li>
+  </ul>
+  </div>
+
+<div id="extent">
+<div id="line" >
+  &equiv;
+  </div>
+  <div id="cross" >
+  &#10060;
+  </div>
+  <div id="expand" >
+  <p style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></p>
+  <p><a href="/about" class="detail" id="d2">About</a></p>
+  <p><a href="/gift" class="detail" id="d3" >Gift-Cards</a></p>
+  <p><a href="/private" class="detail" id="d4">Private-Event</a></p>
+  <p><a href="/location" class="detail" style="background-color:green" id="d5" >Location</a></p>
+  <p><a href="/" class="detail"  id="d6" >Home</a></p>
+  </div>
+</div>
+
+</div>
+
+
+ <div class="page_content">
+    <div id="information" style="color:white" >
+       <h1 class="grow1" >Hours And Location</h1>
+       <h4 class="grow2">2345/67 Rampura Mohalla</h4>
+       <h4  class="grow3">Regular Hours</h4>
+       <h4  class="grow4">Monday - Friday</h4>
+       <h4 class="grow5" >10am-10pm</h4>
+       <br/>
+       <h4 class="grow6"> Saturaday </h4>
+       <h4 class="grow7">10am-6pm </h4>
+       <br/>
+       <h4 class="grow8"> Sunday is Holiday</h4>
+     </div>
+   <div id="map"></div>
+ </div>
+
+ <br/>
+
+  <div style="position:fixed;bottom:0px;width:100%;height:auto;font-size:1.2em;background-color:#888C46;border:2px solid green;">
+    <p style="text-align:center">GET IN TOUCH QUICKLY</p>
+  </div>
+
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+         $("#line").click(function(){
+         anime({
+           targets: '#information',
+           opacity: 0.2,
+           duration: 100
+          })
+         $("#expand").css("display","block");
+         $(this).css("display","none");
+         $("#cross").css("display","block");
+         console.log(window.outerWidth);
+         if( window.outerWidth > 414 ){
+          anime({
+           targets: '#expand',
+           right: 120,
+           duration: 1000
+          });
+         }else{
+          console.log(414);
+          anime({
+           targets: '#expand',
+           right: -20,
+           duration: 1000
+          });
+         }
+     })
+
+      $("#cross").click(function(){
+
+         $(this).css("display","none");
+          anime({
+           targets: '#information',
+           opacity: 1,
+           duration: 100
+          })
+         $("#line").css("display","block");
+          anime({
+           targets: '#expand',
+           right: -190,
+           duration: 1000
+          });
+         $("#expand").css("display","none");
+      })
+})
+
+
+
+    </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,15 @@
+<% if(typeof data!='undefined' ){%>
+ <%data.forEach( li =>{%>
+   <tr>
+    <td id="data"><%= li.name %></td>
+    <td id="data"><%= li.contact %></td>
+    <td id="data"><%= li.email %></td>
+    <td id="data"><%= li.theme %></td>
+    <td id="data"><%= li.date %></td>
+   <td id="data"><%= li.guest %></td>
+   <td id="data"><%= li.stime %></td>
+   <td id="data"><%= li.etime %></td>
+  </tr>
+<%})%>
+<%}
+%>

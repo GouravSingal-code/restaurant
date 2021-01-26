@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <style>
+
+      body{
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+      }
+
+
+   .container1{
+          background-color:#888C46;
+          height:100px;
+          width:100%;
+          padding:10px;
+          line-height:7;
+          z-index:1;
+      }
+
+      #detail10{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+      }
+
+
+      .detail{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+         text-align:center;
+      }
+
+
+
+      .detail:hover{
+        background-color:green;
+      }
+
+            #d1:hover{
+      background-color:green;
+      }
+
+      #d2:hover{
+      background-color:green;
+      }
+
+      #d3:hover{
+      background-color:green;
+      }
+
+      #d4:hover{
+      background-color:green;
+      }
+
+      #d5:hover{
+      background-color:green;
+      }
+
+      #d6:hover{
+      background-color:green;
+      }
+
+      ul{
+        margin-top:0px;
+      }
+
+      .er{
+          display:block;
+          float:right;
+      }
+
+      #extent{
+          display:none;
+      }
+
+
+      ul li{
+        margin-top:5px;
+        height:40px;
+        line-height:3;
+        list-style:none;
+        float:right;
+        margin:10px;
+        border-radius:4px;
+        opacity:0.5;
+        text-decoration:none;
+      }
+
+       #order_now:hover{
+        border:2px solid white;
+      }
+
+
+      ul li a:hover{
+          background-color:green;
+      }
+
+      #qu{
+        width:100%;
+        height:400px;
+        background-color:#A4A4BF;
+        opacity:1;
+        color:#00FF00;
+        line-height:8;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+
+
+
+
+
+      #expand{
+          right:-180px;
+          top:10px;
+          height:400px;
+          width:200px;
+          position:absolute;
+          z-index:1;
+          text-align:center;
+          background-color:transparent;
+          line-height:1.4;
+          display:none;
+      }
+
+
+
+      .fire{
+          display:block;
+      }
+
+      #bresca{
+          font-size:3em;z-index:1;display:inline-block;font-weight:bold;line-height:1;text-shadow:2px 2px 5px #00FF00;letter-spacing:4px;margin-left:60px;position:relative;margin-top:20px;transform:scale(1.5px);
+      }
+
+      #fire2{
+          height:100px;width:130px;position:absolute;top:0px;left:235px;opacity:0.6;
+      }
+
+      #fire1{
+          height:100px;width:130px;position:absolute;top:0px;left:0px;opacity:0.6;
+      }
+
+      #line{
+         position:absolute;top:-270px;right:80px;z-index:1;cursor:pointer;font-size:6em;
+      }
+
+      #cross{
+        position:absolute;top:-120px;right:80px;z-index:1;cursor:pointer;font-size:3.2em;display:none;
+      }
+
+
+
+          .s_no{
+            width:30%;
+          }
+
+          .name{
+            float:left;
+            color:black;
+          }
+
+          .price{
+            float:right;
+            color:black;
+          }
+
+          .detail_items{
+           font-size:1.5em;
+           color:black;
+          }
+
+          #add{
+           float:right;background-color:black;color:white;font-size:0.8em;
+          }
+
+          #no_of{
+           width:35px;
+          }
+
+          #label_name{
+           font-size:1.2em;
+          }
+
+          .category{
+            font-size:1.5em;
+            width:100%;
+            height:11.7%;
+            background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+            border-color:2px solid #E75480;
+          }
+
+
+
+         .breakfast_{
+           display: none;
+         }
+
+         .beverages_{
+           display: none;
+         }
+
+         .drinks_{
+           display: none;
+         }
+
+         .deserts_{
+           display: none;
+         }
+
+         .lunch_{
+           display: none;
+         }
+
+         .dinner_{
+           display: none;
+         }
+
+         table {
+           font-family: arial, sans-serif;
+           border-collapse: collapse;
+           width: 100%;
+           overflow-y: scroll;
+         }
+
+         td, th {
+           border: 1px solid #dddddd;
+           text-align: left;
+           padding: 8px;
+         }
+
+         tr:nth-child(even) {
+           background-color: #dddddd;
+         }
+
+
+  </style>
+  <body>
+
+
+
+ <div  class="container1" >
+  <img id="fire1" src="/50.gif" >
+  <div id="bresca" >BRESCA</div>
+  <img id="fire2" src="/50.gif" >
+  <div class="er" >
+  <ul>
+  <li style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></li>
+  <li ><a href="/menu" id="detail10" >Menu</a></li>
+  <li ><a href="/about" id="detail10" >About</a></li>
+  <li ><a href="/gift" id="detail10" >Gift-Cards</a></li>
+  <li ><a href="/private" id="detail10" >Private-Event</a></li>
+  <li ><a href="/location" id="detail10" >Location</a></li>
+    <li ><a href="/" id="detail10"  >Home</a></li>
+  </ul>
+ </div>
+
+<div id="extent">
+ <div id="line" >
+  &equiv;
+ </div>
+ <div id="cross" >
+  &#10060;
+ </div>
+ <div id="expand" >
+  <p style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></p>
+  <p><a href="/menu" class="detail" id="d1" >Menu</a></p>
+  <p><a href="/about" class="detail" id="d2">About</a></p>
+  <p><a href="/gift" class="detail" id="d3" >Gift-Cards</a></p>
+  <p><a href="/private" class="detail" id="d4">Private-Event</a></p>
+  <p><a href="/location" class="detail" id="d5" >Location</a></p>
+  <p><a href="/" class="detail"  id="d6" >Home</a></p>
+  </div>
+ </div>
+
+</div>
+
+
+<br/>
+
+<div class="bill" style="background-color:lightgray;display:none;justify-content:center;align-items:center;display:flex;width:25%;left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top:0;
+  bottom:0;
+  margin-bottom: auto;
+  margin-top: auto;
+">
+</div>
+
+
+<div class="menu" style="justify-content:center;align-items:center;display:flex;margin-left:auto;margin-right:auto;height:700px;width:50%">
+
+<div style="border:2px solid #E75480;height:80%;width:20%">
+ <button class="category" id="breakfast"  onclick="clicked(this.id)"><b>Breakfast</b></button>
+ <hr/>
+ <button class="category" id="lunch"  onclick="clicked(this.id)"><b>Lunch</b></button>
+ <hr/>
+ <button class="category" id="dinner" onclick="clicked(this.id)"><b>Dinner</b></button>
+ <hr/>
+ <button class="category" id="drinks" onclick="clicked(this.id)"><b>Drinks</b></button>
+ <hr/>
+ <button class="category" id="deserts" onclick="clicked(this.id)"><b>Deserts</b></button>
+ <hr/>
+ <button class="category" id="beverages" onclick="clicked(this.id)"><b>Beverages</b></button>
+</div>
+
+<div class="items" style="border-radius:5px;border:2px solid #E75480;width:80%;height:80%;overflow-y:scroll;background-image: url('bf.jpg');background-size: cover;padding:10px">
+
+
+        <div class="s_no" style="width:100%" >
+         <h2  id="heading" style="text-align:center">CATEGORY</h2>
+         <hr style="border:1px solid #E75480"/>
+        </div>
+
+
+        <div class="breakfast_">
+
+        </div>
+
+        <div class="lunch_">
+
+        </div>
+
+        <div class="dinner_">
+
+        </div>
+
+        <div class="drinks_">
+
+        </div>
+
+        <div class="deserts_">
+
+        </div>
+
+        <div class="beverages_">
+
+        </div>
+
+
+       <br/>
+       <br/>
+       <br/>
+       <br/>
+
+ </div>
+</div>
+
+<div style="justify-content:center;align-items:center;display:flex;margin-left:auto;margin-right:auto;width:50%;padding:20px">
+   <p style="float:left;font-size:1.5em"> No of items: <span id="x">0</span> </p>
+   <button style="float:center;margin-left:auto;margin-right:auto;background-color: green;color:white;font-size:1.2em" onclick="c()">Done</button>
+   <p style="float:right;font-size:1.5em"> Total Cost of items: <span id="y">0</span> </p>
+</div>
+
+
+
+
+    <script type="text/javascript">
+
+
+       function change(id_value){
+
+             var id = id_value;
+             var n = id_value.split("_");
+             var name = id.charAt(0)+"name_"+n[1];
+             var val = id.charAt(0)+"value_"+n[1];
+             var pr = id.charAt(0)+"price_"+n[1];
+
+             var curr = parseInt( document.getElementById(val).innerHTML , 0 );
+             var curr_items = parseInt( document.getElementById("x").innerHTML , 0 );
+             var curr_prices = parseInt( document.getElementById("y").innerHTML , 0 );
+             var price  = parseInt( document.getElementById(pr).innerHTML.split("$")[1] , 0 );
+
+             if(n[0] == id.charAt(0)+"add"){
+                curr++;
+                curr_items++;
+                curr_prices+=price;
+             }else{
+
+               if( curr <= 0 ){
+                 curr = 0;
+               }else{
+                 curr--;
+                 curr_items--;
+                 curr_prices-=price;
+               }
+
+             }
+
+
+            document.getElementById(val).innerHTML = curr;
+            document.getElementById("x").innerHTML = curr_items;
+            document.getElementById("y").innerHTML = curr_prices;
+           }
+
+       function show_content(){
+         fetch('breakfast.js', {mode: 'no-cors'})
+         .then(response => response.json())
+         .then(data=>{
+
+           for( i=0 ; i<data.length ; i++ ){
+            var div = document.createElement('div');
+            var x = i+1;
+            var id1 = "1sub_"+x;
+            var id2 = "1value_"+x;
+            var id3 = "1add_"+x;
+            var id4 = "1price_"+x;
+            var id5 = "1name_"+x;
+
+
+            div.innerHTML = `
+
+                 <div class="detail_items">
+                   <div class="name"  id=${id5}> &lowast; &nbsp; ${data[i].name} </div>
+                   <div class="price" id=${id4}>  ${data[i].rate} </div>
+                 </div>
+
+                  <br/>
+                  <br/>
+
+                 <div>
+                   <div style="float:right">
+                    <button id=${id1} onclick="change(this.id)" >&#45;</button><button id=${id2}>0</button><button id=${id3} onclick="change(this.id)">&#43;</button>
+                   </div>
+                 </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                `;
+
+              document.querySelector(".breakfast_").append(div);
+
+            }
+         })
+         .catch(error => console.error(error));
+
+
+         fetch('beverages.js', {mode: 'no-cors'})
+         .then(response => response.json())
+         .then(data=>{
+
+           for( i=0 ; i<data.length ; i++ ){
+            var div = document.createElement('div');
+            var x = i+1;
+            var id1 = "2sub_"+x;
+            var id2 = "2value_"+x;
+            var id3 = "2add_"+x;
+            var id4 = "2price_"+x;
+            var id5 = "2name_"+x;
+
+
+            div.innerHTML = `
+
+                 <div class="detail_items">
+                   <div class="name"  id=${id5}> &lowast; &nbsp; ${data[i].name} </div>
+                   <div class="price" id=${id4}>  ${data[i].rate} </div>
+                 </div>
+
+                  <br/>
+                  <br/>
+
+                 <div>
+                   <div style="float:right">
+                    <button id=${id1} onclick="change(this.id)" >&#45;</button><button id=${id2}>0</button><button id=${id3} onclick="change(this.id)">&#43;</button>
+                   </div>
+                 </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                `;
+
+              document.querySelector(".beverages_").append(div);
+
+            }
+         })
+         .catch(error => console.error(error));
+
+
+         fetch('deserts.js', {mode: 'no-cors'})
+         .then(response => response.json())
+         .then(data=>{
+
+           for( i=0 ; i<data.length ; i++ ){
+            var div = document.createElement('div');
+            var x = i+1;
+            var id1 = "3sub_"+x;
+            var id2 = "3value_"+x;
+            var id3 = "3add_"+x;
+            var id4 = "3price_"+x;
+            var id5 = "3name_"+x;
+
+
+            div.innerHTML = `
+
+                 <div class="detail_items">
+                   <div class="name"  id=${id5}> &lowast; &nbsp; ${data[i].name} </div>
+                   <div class="price" id=${id4}>  ${data[i].rate} </div>
+                 </div>
+
+                  <br/>
+                  <br/>
+
+                 <div>
+                   <div style="float:right">
+                    <button id=${id1} onclick="change(this.id)" >&#45;</button><button id=${id2}>0</button><button id=${id3} onclick="change(this.id)">&#43;</button>
+                   </div>
+                 </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                `;
+
+              document.querySelector(".deserts_").append(div);
+
+            }
+         })
+         .catch(error => console.error(error));
+
+
+         fetch('dinner.js', {mode: 'no-cors'})
+         .then(response => response.json())
+         .then(data=>{
+
+           for( i=0 ; i<data.length ; i++ ){
+            var div = document.createElement('div');
+            var x = i+1;
+            var id1 = "4sub_"+x;
+            var id2 = "4value_"+x;
+            var id3 = "4add_"+x;
+            var id4 = "4price_"+x;
+            var id5 = "4name_"+x;
+
+
+            div.innerHTML = `
+
+                 <div class="detail_items">
+                   <div class="name"  id=${id5}> &lowast; &nbsp; ${data[i].name} </div>
+                   <div class="price" id=${id4}>  ${data[i].rate} </div>
+                 </div>
+
+                  <br/>
+                  <br/>
+
+                 <div>
+                   <div style="float:right">
+                    <button id=${id1} onclick="change(this.id)" >&#45;</button><button id=${id2}>0</button><button id=${id3} onclick="change(this.id)">&#43;</button>
+                   </div>
+                 </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                `;
+
+              document.querySelector(".dinner_").append(div);
+
+            }
+         })
+         .catch(error => console.error(error));
+
+
+
+         fetch('drinks.js', {mode: 'no-cors'})
+         .then(response => response.json())
+         .then(data=>{
+
+           for( i=0 ; i<data.length ; i++ ){
+            var div = document.createElement('div');
+            var x = i+1;
+            var id1 = "5sub_"+x;
+            var id2 = "5value_"+x;
+            var id3 = "5add_"+x;
+            var id4 = "5price_"+x;
+            var id5 = "5name_"+x;
+
+
+            div.innerHTML = `
+
+                 <div class="detail_items">
+                   <div class="name"  id=${id5}> &lowast; &nbsp; ${data[i].name} </div>
+                   <div class="price" id=${id4}>  ${data[i].rate} </div>
+                 </div>
+
+                  <br/>
+                  <br/>
+
+                 <div>
+                   <div style="float:right">
+                    <button id=${id1} onclick="change(this.id)" >&#45;</button><button id=${id2}>0</button><button id=${id3} onclick="change(this.id)">&#43;</button>
+                   </div>
+                 </div>
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                `;
+
+              document.querySelector(".drinks_").append(div);
+
+            }
+         })
+         .catch(error => console.error(error));
+
+
+
+         fetch('lunch.js', {mode: 'no-cors'})
+         .then(response => response.json())
+         .then(data=>{
+
+           for( i=0 ; i<data.length ; i++ ){
+            var div = document.createElement('div');
+            var x = i+1;
+            var id1 = "6sub_"+x;
+            var id2 = "6value_"+x;
+            var id3 = "6add_"+x;
+            var id4 = "6price_"+x;
+            var id5 = "6name_"+x;
+
+
+            div.innerHTML = `
+                 <div class="detail_items">
+                   <div class="name"  id=${id5}> &lowast; &nbsp; ${data[i].name} </div>
+                   <div class="price" id=${id4}>  ${data[i].rate} </div>
+                 </div>
+
+                  <br/>
+                  <br/>
+
+                 <div>
+                   <div style="float:right">
+                    <button id=${id1} onclick="change(this.id)" >&#45;</button><button id=${id2}>0</button><button id=${id3} onclick="change(this.id)">&#43;</button>
+                   </div>
+                 </div>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                `;
+
+              document.querySelector(".lunch_").append(div);
+
+            }
+         })
+         .catch(error => console.error(error));
+       }
+
+       show_content();
+
+       function clicked(id){
+
+         document.getElementById("breakfast").style.color="black";
+         document.getElementById("lunch").style.color="black";
+         document.getElementById("drinks").style.color="black";
+         document.getElementById("deserts").style.color="black";
+         document.getElementById("beverages").style.color="black";
+         document.getElementById("dinner").style.color="black";
+
+         document.getElementById(id).style.color="#888C46";
+
+          let x = id+"_";
+
+
+         //console.log(document.querySelector('.breakfast_'));
+         document.getElementsByClassName('breakfast_')[0].style.display = "none";
+         document.getElementsByClassName('beverages_')[0].style.display = "none";
+         document.getElementsByClassName('drinks_')[0].style.display = "none";
+         document.getElementsByClassName('deserts_')[0].style.display = "none";
+         document.getElementsByClassName('lunch_')[0].style.display = "none";
+         document.getElementsByClassName('dinner_')[0].style.display = "none";
+
+         document.getElementsByClassName(x)[0].style.display = "block";
+         let head = x.split("_")[0].toUpperCase();
+         document.getElementById("heading").innerHTML = head;
+
+       }
+
+       function c(){
+
+        document.getElementsByClassName('bill')[0].style.position = "absolute";
+        var bi = document.getElementsByClassName('bill')[0];
+        bi.innerHTML+=`
+         <p style="width:100%"> <a id="c" style="float:right;margin-right:5px;cursor:pointer" onclick="close()" href="/" >&#10006;</a></p>
+         <h4 style="text-align:center"> YOUR BILL </h4>
+         <div style="height:60%;overflow-y:scroll">
+         <table class="bill_" style="margin-left:auto;margin-right:auto;width:80%;">
+         </table>
+         <div>
+        `;
+
+        var table = document.getElementsByClassName('bill_')[0];
+        table.innerHTML+= `
+        <tr>
+        <td>Name</td>
+        <td>Quantity</td>
+        <td>Total</td>
+       </tr>
+       `;
+
+       for( i=1 ; i<7 ; i++ ){
+        let which = document.querySelector('.items').children[i];
+         for( let j=0 ; j<which.children.length ; j++ ){
+            let food = which.children[j];
+             var name = "# "+food.children[0].children[0].innerHTML.split(" ")[3];
+             var price = food.children[0].children[1].innerHTML.split("$")[1];
+             var quantity = food.children[3].children[0].children[1].innerHTML;
+             if( quantity == "0" ){
+               continue;
+             }
+             var x = parseInt(quantity,10)*parseInt(price,10);
+             var total = "$"+x;
+             var table = document.getElementsByClassName('bill_')[0];
+             table.innerHTML+= `
+             <tr>
+             <td>${name}</td>
+             <td>${quantity}</td>
+             <td>${total}</td>
+            </tr>
+             `;
+
+         }
+       }
+
+        document.getElementsByClassName('bill')[0].style.display="block";
+        document.getElementsByClassName('bill')[0].style.height = "600px";
+
+        var bo = document.getElementsByClassName('bill')[0];
+
+       bo.innerHTML+=`
+        <div style="position:absolute;bottom:0px;width:100%">
+
+        <div>
+            <h6 style="text-align:center">Apply Coupon</h6>
+            <br/>
+            <div style="height:40px;width:250px;border:1px solid black;margin-right:auto;margin-left:auto">
+            </div>
+        </div>
+         <br/>
+        <div style="text-align:center;font-size:1.2em">
+          Final Amount: <span id="amount">0</span>$
+        </div>
+        <a href="/order.html?amount:10" style="cursor:pointer;width:100%;font-size:1.3em;background-color:green;color:white;text-align:center;font-size:1.2em">
+          Continue
+        </a>
+
+        </div>
+       `;
+
+       document.getElementById("amount").innerHTML = document.getElementById('y').innerHTML;
+
+      }
+
+
+
+    </script>
+
+
+  </body>
+
+</html>

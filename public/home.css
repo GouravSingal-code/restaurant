@@ -1,0 +1,1236 @@
+body{
+  background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:auto;
+}
+
+/***** heading *****/
+
+.container1{
+    background-color:#888C46;
+    height:100px;
+    width:100%;
+    padding:10px;
+    line-height:7;
+    position:fixed;
+    z-index:1;
+}
+
+.fire{
+    display:block;
+}
+
+/*heading*/
+/*fire1 title fire2*/
+#fire1{
+    height:100px;width:130px;position:absolute;top:0px;left:0px;opacity:0.6;
+}
+#bresca{
+    font-size:3em;z-index:1;display:inline-block;font-weight:bold;line-height:1;text-shadow:2px 2px 5px #00FF00;letter-spacing:4px;margin-left:60px;position:relative;margin-top:20px;transform:scale(1.5px);
+}
+#fire2{
+    height:100px;width:130px;position:absolute;top:0px;left:230px;opacity:0.6;
+}
+
+
+.er{
+      display:block;
+      float:right;
+}
+
+#order_now{
+  text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em;
+}
+
+#order_now:hover{
+   border:2px solid white;
+}
+.header_links{
+   color:black;
+   font-size:1.6em;
+   text-decoration:none;
+   list-style:none;
+   font-weight:bold;
+}
+
+ul{
+  margin-top:0px;
+}
+
+ul li{
+  margin-top:5px;
+  height:40px;
+  line-height:3;
+  list-style:none;
+  float:right;
+  margin:10px;
+  border-radius:4px;
+  opacity:0.5;
+  text-decoration:none;
+}
+
+ul li a:hover{
+    background-color:green;
+}
+
+
+  #extent{
+      display:none;
+  }
+
+  /* symbol when size of screen get shorter */
+  #line{
+     position:absolute;top:-270px;right:80px;z-index:1;cursor:pointer;font-size:6em;
+  }
+  #cross{
+    position:absolute;top:-120px;right:80px;z-index:1;cursor:pointer;font-size:3.2em;display:none;
+  }
+
+
+  #expand{
+      right:-180px;
+      top:10px;
+      height:400px;
+      width:200px;
+      position:absolute;
+      z-index:1;
+      text-align:center;
+      background-color:transparent;
+      line-height:1.4;
+      display:none;
+  }
+
+  .detail{
+     color:black;
+     font-size:1.6em;
+     text-decoration:none;
+     list-style:none;
+     font-weight:bold;
+     text-align:center;
+  }
+
+  .detail:hover{
+    background-color:green;
+  }
+
+
+  #d1:hover,#d2:hover,#d3:hover,#d4:hover,#d5:hover,#d6:hover{
+  background-color:green;
+  }
+
+
+/**** heading  ****/
+
+
+/*** big image with booking option ****/
+
+  #parallex{
+      background:url('/47.jpg') no-repeat center;
+      background-size:cover;
+      background-attachment:fixed;
+      width:100%;
+      margin-left:auto;
+      margin-right:auto;
+      height:1000px;
+  }
+
+  #book{
+      text-align:center;
+      position:absolute;
+      top:500px;
+      left:150px;
+      z-index:1;
+  }
+
+  .h{
+    color:#FFFFFF;text-shadow:4px 4px 4px  brown;
+  }
+
+
+  #submit{
+   font-size:2em;background-color:#888C46;color:black;text-decoration:none;z-index:3;border-radius:4px;width:200px;text-align:center;
+   transition:transform 0.1s;
+  }
+
+  #submit:hover{
+   background-color:grey;
+   transform:rotateY(180deg)
+  }
+
+/**** big image with booking option ****/
+
+
+
+  #privatepic{
+      width:50%;height:100%;filter: grayscale(50%);display:inline-block;margin-right:0px;
+  }
+
+
+
+  #tick{
+  display:none;justify-content:center;align-items:center;z-index:3;position:absolute;top:700px;
+  }
+
+  #photo{
+  position:absolute;z-index:3;width:300px;height:300px;margin-left:1800px;
+  }
+
+
+  #qu{
+    width:100%;
+    height:400px;
+    background-color:#A4A4BF;
+    opacity:1;
+    color:#00FF00;
+    line-height:8;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .collection{
+      height:auto;
+      width:100%;
+      background-color:#16235A;
+      padding-top:5%;
+      padding-bottom:5%;1
+      position:relative;
+  }
+
+ .detail2{
+    width:100%;
+    height:40px;
+    background-color:#888C46;
+    position:absolute;
+  }
+
+  .detail3{
+    width:100%;
+    height:30px;
+    background-color:#FFFFFF;
+    position:absolute;
+    top:42px;
+    text-align:center;
+  }
+
+  .detail4{
+      line-height:0;
+      margin:20px;
+      opacity:1;
+  }
+
+
+  .detail5{
+     text-decoration:none;
+     background-color:black;
+  }
+
+
+
+
+  #image{
+   margin:20px;
+   border-radius:50%;
+   transition:transform 0.5s;
+   width:200px;
+   filter: grayscale(100%);
+   }
+
+
+  #image:hover{
+   transform:scale(1.3);
+   filter: grayscale(0%);
+   animation-name:shape;
+   animation-duration:6s;
+   animation-delay:-5s;
+   animation-timing-function:ease-in-out;
+  }
+
+
+
+
+
+
+  .info{
+      height:500px;
+      width:60%;
+      border-style:solid;
+      display:inline-block;
+      margin-left:100px;
+  }
+
+  .w3{
+      font-size:1.6em;
+  }
+
+  #big{
+      display:inline-block;
+      text-align:center;
+      margin-right:150px;
+      margin-left:100px;
+  }
+
+  #left{
+      display:inline-block;
+      text-align:center;
+      margin-right:80px;
+      margin-left:20px;
+  }
+
+
+
+
+
+  #fav{
+      display:inline-block;
+      text-align:center;
+      margin:15px;
+  }
+
+  #frequent{
+      width:100%;
+      height:auto;
+      background:url('/40.jpg') no-repeat center;
+      background-size:cover;
+      background-attachment:fixed;
+      margin-bottom:20px;
+      margin-top:20px;
+      padding-left:120px;
+      padding-right:120px;
+      padding-top:30px;
+      background-repeat:no-repeat;
+      position:relative;
+      z-index:0;
+  }
+
+  #link1{
+      background-color:blue;font-size:1.2em;margin-left:auto;margin-right:auto;border-radius:4px;height:30px;width:130px;text-align:center;
+  }
+
+  #link2{
+      background-color:blue;font-size:1.2em;margin-left:auto;margin-right:auto;border-radius:4px;height:30px;width:130px;text-align:center;
+  }
+
+  #det1{
+    margin-top:20%;text-align:center;
+  }
+
+  #det2{
+      margin-top:20%;text-align:center;
+  }
+
+  .form1{
+      background-color:transparent;
+      height:auto;
+      width:560px;
+      margin-left:auto;
+      margin-right:auto;
+      z-index:1;
+      position:absolute;
+      left:600px;
+      top:600px;
+      padding-top:80px;
+      padding-bottom:20px;
+      padding-left:50px;
+      opacity:0;
+      display:none;
+  }
+
+  .fill{
+       width:500px
+  }
+
+  .line{
+      background-color:black;height:2px;width:500px;margin-left:0px;margin-top:0px;
+  }
+
+  #know1{
+      float:left;background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+background-blend-mode: normal,color-burn;width:50%;height:100%;padding-bottom:217px;z-index:1;
+  }
+
+  #know2{
+    float:right;background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+background-blend-mode: normal,color-burn;width:50%;height:100%;padding-bottom:262px;position:relative;z-index:0;display:inline-block;
+  }
+
+
+
+  #facebook{
+   height:20px;width:20px;margin-right:10px;
+  }
+
+  #twitter{
+   height:20px;width:20px;margin-right:10px;
+  }
+
+  #instagram{
+   height:20px;width:20px;
+  }
+
+  #timing{
+      display:inline-block;text-align:center;
+  }
+
+  #last{
+      position:relative;margin-top:50px;height:60px;background-color:black;
+  }
+
+  .daba1{
+       margin-left:auto;margin-right:auto;width:85%;height:45%;
+  }
+
+  .daba2{
+       margin-left:auto;margin-right:auto;width:85%;height:45%;
+  }
+
+  #our_frq{
+      text-align:center;font-weight:bold;
+  }
+
+  @media all and (max-width:1024px ){
+      #tick{
+      position:relative;
+      top:0px;
+     }
+
+     #photo{
+      margin-left:0px;
+    }
+      #photo{
+          top:0;
+          position:absolute;
+      }
+
+      .container1{
+          position:relative;
+      }
+
+      .er{
+          display:none;
+      }
+
+      #extent{
+          display:block;
+      }
+
+      #parallex{
+          height:900px;
+      }
+
+      #big{
+          display:none;
+      }
+
+      .w3{
+          font-size:1.6em;
+      }
+
+      #left{
+          margin-left:80px;
+          margin-right:100px;
+      }
+
+      #book{
+        top:44%;
+        left:2%;
+      }
+
+      #h2{
+        display:none;
+      }
+
+      #fav{
+          margin:30px;
+      }
+
+      #frequent{
+         padding-left:8%;
+      }
+
+
+      #h50{
+          font-size:1em;
+      }
+
+
+      #det1{
+          margin-top:10%;
+      }
+
+      #det2{
+          margin-top:14%;
+      }
+
+      #know1{
+          padding-bottom:78px;
+      }
+
+      #know2{
+          padding-bottom:114px;
+      }
+      .form1{
+          left:340px;
+          top:0px;
+          color:blue;
+          font-weight:bold;
+
+      }
+
+      .fire{
+          display:none;
+      }
+
+
+      .fill{
+          width:200px;
+      }
+
+      .line{
+          width:200px;
+      }
+
+      .detail{
+          color:white;
+      }
+  }
+
+  @media all and (max-width:769px) {
+
+
+      .container1{
+          position:relative;
+      }
+
+      .er{
+          display:none;
+      }
+
+      #extent{
+          display:block;
+      }
+
+      #parallex{
+          height:700px;
+      }
+
+      #big{
+          display:none;
+      }
+
+      .w3{
+          font-size:1.2em;
+      }
+
+      #left{
+          margin-left:50px;
+      }
+
+      #book{
+        top:44%;
+        left:1%;
+      }
+
+      #h2{
+        display:none;
+      }
+
+      #fav{
+          margin:30px;
+      }
+
+      #frequent{
+         padding-left:13%;
+      }
+
+
+      #h50{
+          font-size:1em;
+      }
+
+
+      #det1{
+          margin-top:2%;
+      }
+
+      #det2{
+          margin-top:8%;
+      }
+
+      #know1{
+          padding-bottom:21px;
+      }
+
+      #know2{
+          padding-bottom:53px;
+      }
+      .form1{
+          left:250px;
+          top:-50px;
+          color:blue;
+          font-weight:bold;
+
+      }
+
+      .fire{
+          display:none;
+      }
+
+
+      .fill{
+          width:200px;
+      }
+
+      .line{
+          width:200px;
+      }
+  }
+
+  @media all and (max-width:414px){
+
+      #our_frq{
+          margin-left:180px;
+          font-size:1.6em;
+      }
+      .container1{
+          position:relative;
+      }
+
+      .er{
+          display:none;
+      }
+
+      #extent{
+          display:block;
+      }
+
+      #parallex{
+          height:700px;
+      }
+
+      #big{
+          display:none;
+      }
+
+      .w3{
+          font-size:1.2em;
+      }
+
+      #left{
+          margin-left:20px;
+      }
+
+      #book{
+        top:44%;
+        left:10%;
+      }
+
+      #h2{
+        display:none;
+      }
+
+      #fav{
+          margin:30px;
+      }
+
+      #frequent{
+         padding-left:13%;
+      }
+
+
+      #h50{
+          font-size:1em;
+      }
+
+
+      #det1{
+          margin-top:2%;
+      }
+
+      #det2{
+          margin-top:-2%;
+      }
+
+      #know1{
+          padding-bottom:20px;
+      }
+
+      #know2{
+          padding-bottom:10px;
+      }
+
+      .form1{
+          left:30px;
+          top:-300px;
+          color:blue;
+          font-weight:bold;
+          width:360px;
+          padding-left:25px;
+      }
+
+      .fire{
+          display:none;
+      }
+
+
+      .fill{
+          width:200px;
+      }
+
+      .line{
+          width:200px;
+      }
+
+      #bresca{
+          font-size:2em;
+      }
+
+      #fire2{
+          left:160px;
+      }
+
+      #line{
+          right:20px;
+      }
+
+      #cross{
+          right:20px;
+      }
+
+      .detail{
+          font-size:1.6em;
+          color:yellow;
+          font-weight:bold;
+      }
+
+      #link2{
+          margin-top:0px;
+      }
+
+      #h201{
+          font-size:1.4em;
+      }
+
+      #textprivate{
+        display:none;
+      }
+
+      #facebook{
+       height:10px;width:10px;
+       margin-right:0px;
+      }
+
+      #twitter{
+        height:10px;width:10px;
+      }
+
+      #instagram{
+      height:10px;width:10px;
+      }
+
+      .detail4{
+          font-size:0.8em;
+      }
+
+      #timing{
+      margin-left:70px;
+      }
+
+      #h50{
+          display:none;
+      }
+
+      #expand{
+          top:80px;
+          line-height:0.8em;
+      }
+
+  }
+
+  @media all and (max-width:393px){
+
+                #our_frq{
+          margin-left:180px;
+          font-size:1.6em;
+      }
+   .container1{
+          position:relative;
+      }
+
+      .er{
+          display:none;
+      }
+
+      #extent{
+          display:block;
+      }
+
+      #parallex{
+          height:700px;
+      }
+
+      #big{
+          display:none;
+      }
+
+      .w3{
+          font-size:1.2em;
+      }
+
+      #left{
+          margin-left:20px;
+      }
+
+      #book{
+        top:44%;
+        left:6%;
+      }
+
+      #h2{
+        display:none;
+      }
+
+      #fav{
+          margin:30px;
+      }
+
+      #frequent{
+         padding-left:13%;
+      }
+
+
+      #h50{
+          font-size:1em;
+      }
+
+
+      #det1{
+          margin-top:2%;
+      }
+
+      #det2{
+          margin-top:-2%;
+      }
+
+      #know1{
+          padding-bottom:14.5px;
+      }
+
+      #know2{
+          padding-bottom:5px;
+      }
+
+      .form1{
+          left:30px;
+          top:-300px;
+          color:blue;
+          font-weight:bold;
+          width:360px;
+          padding-left:25px;
+      }
+
+      .fire{
+          display:none;
+      }
+
+
+      .fill{
+          width:200px;
+      }
+
+      .line{
+          width:200px;
+      }
+
+      #bresca{
+          font-size:2em;
+      }
+
+      #fire2{
+          left:160px;
+      }
+
+      #line{
+          right:20px;
+      }
+
+      #cross{
+          right:20px;
+      }
+
+      .detail{
+          font-size:1.6em;
+          color:yellow;
+          font-weight:bold;
+      }
+
+      #link2{
+          margin-top:0px;
+      }
+
+      #h201{
+          font-size:1.4em;
+      }
+
+      #textprivate{
+        display:none;
+      }
+
+      #facebook{
+       height:10px;width:10px;
+       margin-right:0px;
+      }
+
+      #twitter{
+        height:10px;width:10px;
+      }
+
+      #instagram{
+      height:10px;width:10px;
+      }
+
+      .detail4{
+          font-size:0.6em;
+      }
+
+      #timing{
+      margin-left:70px;
+      }
+
+      #h50{
+          display:none;
+      }
+
+      #expand{
+          top:80px;
+          line-height:0.8em;
+      }
+
+  }
+
+  @media all and (max-width:375px){
+
+                #our_frq{
+          margin-left:180px;
+          font-size:1.6em;
+      }
+      .container1{
+          position:relative;
+      }
+
+      .er{
+          display:none;
+      }
+
+      #extent{
+          display:block;
+      }
+
+      #parallex{
+          height:700px;
+      }
+
+      #big{
+          display:none;
+      }
+
+      .w3{
+          font-size:1.2em;
+      }
+
+      #left{
+          margin-left:0px;
+      }
+
+      #book{
+        top:44%;
+        left:4%;
+      }
+
+      #h2{
+        display:none;
+      }
+
+      #fav{
+          margin:30px;
+      }
+
+      #frequent{
+         padding-left:13%;
+      }
+
+
+      #h50{
+          font-size:1em;
+      }
+
+
+      #det1{
+          margin-top:2%;
+      }
+
+      #det2{
+          margin-top:-2%;
+      }
+
+      #know1{
+          padding-bottom:5.5px;
+      }
+
+      #know2{
+          padding-bottom:10px;
+      }
+
+      .form1{
+          left:10px;
+          top:-300px;
+          color:blue;
+          font-weight:bold;
+          width:320px;
+          padding-left:25px;
+
+      }
+
+      .fire{
+          display:none;
+      }
+
+
+      .fill{
+          width:200px;
+      }
+
+      .line{
+          width:200px;
+      }
+
+      #bresca{
+          font-size:2em;
+      }
+
+      #fire2{
+          left:150px;
+      }
+
+      #line{
+          right:20px;
+      }
+
+      #cross{
+          right:20px;
+      }
+
+      .detail{
+          font-size:1.6em;
+          color:yellow;
+          font-weight:bold;
+      }
+
+      #link2{
+          margin-top:-5px;
+      }
+
+      #h201{
+          font-size:1.2em;
+      }
+
+      #textprivate{
+        display:none;
+      }
+
+      #facebook{
+       height:10px;width:10px;
+       margin-right:0px;
+      }
+
+      #twitter{
+        height:10px;width:10px;
+      }
+
+      #instagram{
+      height:10px;width:10px;
+      }
+
+      .detail4{
+          font-size:0.6em;
+      }
+
+      #timing{
+      margin-left:50px;
+      }
+
+      #h50{
+          display:none;
+      }
+
+      #expand{
+          top:80px;
+          line-height:0.8em;
+      }
+
+  }
+
+  @media all and (max-width:320px){
+
+    #our_frq{
+          margin-left:180px;
+          font-size:1.2em;
+      }
+    .container1{
+          position:relative;
+      }
+
+      .er{
+          display:none;
+      }
+
+      #extent{
+          display:block;
+      }
+
+      #parallex{
+          height:700px;
+      }
+
+      #big{
+          display:none;
+      }
+
+      .w3{
+          font-size:1.2em;
+      }
+
+      #left{
+          margin-left:-15px;
+      }
+
+      #book{
+        top:44%;
+        left:4%;
+      }
+
+      #h2{
+        display:none;
+      }
+
+      #fav{
+          margin:30px;
+      }
+
+      #frequent{
+         padding-left:8%;
+      }
+
+
+      #h50{
+          font-size:1em;
+      }
+
+      #h20{
+          font-size:1.4em;
+      }
+
+      #det1{
+          margin-top:2%;
+      }
+
+      #det2{
+          margin-top:-2%;
+      }
+
+      #know1{
+          padding-bottom:-10px;
+      }
+
+      #know2{
+          padding-bottom:2px;
+      }
+
+      .form1{
+          left:0px;
+          top:-400px;
+          color:blue;
+          font-weight:bold;
+          width:250px;
+          padding-left:15px;
+
+      }
+
+      .fire{
+          display:none;
+      }
+
+
+      .fill{
+          width:200px;
+      }
+
+      .line{
+          width:200px;
+      }
+
+      #bresca{
+          font-size:2em;
+      }
+
+      #fire2{
+          left:160px;
+      }
+
+      #line{
+          right:20px;
+      }
+
+      #cross{
+          right:20px;
+      }
+
+      .detail{
+          font-size:1.6em;
+          color:yellow;
+          font-weight:bold;
+      }
+
+      #link2{
+          margin-top:-5px;
+      }
+
+      #h201{
+          font-size:1.05em;
+      }
+
+      #textprivate{
+        display:none;
+      }
+
+      #facebook{
+       height:10px;width:10px;
+       margin-right:0px;
+      }
+
+      #twitter{
+        height:10px;width:10px;
+      }
+
+      #instagram{
+      height:10px;width:10px;
+      }
+
+      .detail4{
+          font-size:0.4em;
+      }
+
+      #timing{
+      margin-left:30px;
+      }
+
+      #h50{
+          display:none;
+      }
+
+      #expand{
+          top:80px;
+          line-height:0.8em;
+      }
+  }

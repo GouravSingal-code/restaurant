@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <style>
+
+      body{
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+      }
+
+
+   .container1{
+          background-color:#888C46;
+          height:100px;
+          width:100%;
+          padding:10px;
+          line-height:7;
+          z-index:1;
+      }
+
+      #detail10{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+      }
+
+
+      .detail{
+         color:black;
+         font-size:1.6em;
+         text-decoration:none;
+         list-style:none;
+         font-weight:bold;
+         text-align:center;
+      }
+
+
+
+      .detail:hover{
+        background-color:green;
+      }
+
+            #d1:hover{
+      background-color:green;
+      }
+
+      #d2:hover{
+      background-color:green;
+      }
+
+      #d3:hover{
+      background-color:green;
+      }
+
+      #d4:hover{
+      background-color:green;
+      }
+
+      #d5:hover{
+      background-color:green;
+      }
+
+      #d6:hover{
+      background-color:green;
+      }
+
+      ul{
+        margin-top:0px;
+      }
+
+      .er{
+          display:block;
+          float:right;
+      }
+
+      #extent{
+          display:none;
+      }
+
+
+      ul li{
+        margin-top:5px;
+        height:40px;
+        line-height:3;
+        list-style:none;
+        float:right;
+        margin:10px;
+        border-radius:4px;
+        opacity:0.5;
+        text-decoration:none;
+      }
+
+       #order_now:hover{
+        border:2px solid white;
+      }
+
+
+      ul li a:hover{
+          background-color:green;
+      }
+
+      #qu{
+        width:100%;
+        height:400px;
+        background-color:#A4A4BF;
+        opacity:1;
+        color:#00FF00;
+        line-height:8;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+
+
+
+
+
+      #expand{
+          right:-180px;
+          top:10px;
+          height:400px;
+          width:200px;
+          position:absolute;
+          z-index:1;
+          text-align:center;
+          background-color:transparent;
+          line-height:1.4;
+          display:none;
+      }
+
+
+
+      .fire{
+          display:block;
+      }
+
+      #bresca{
+          font-size:3em;z-index:1;display:inline-block;font-weight:bold;line-height:1;text-shadow:2px 2px 5px #00FF00;letter-spacing:4px;margin-left:60px;position:relative;margin-top:20px;transform:scale(1.5px);
+      }
+
+      #fire2{
+          height:100px;width:130px;position:absolute;top:0px;left:235px;opacity:0.6;
+      }
+
+      #fire1{
+          height:100px;width:130px;position:absolute;top:0px;left:0px;opacity:0.6;
+      }
+
+      #line{
+         position:absolute;top:-270px;right:80px;z-index:1;cursor:pointer;font-size:6em;
+      }
+
+      #cross{
+        position:absolute;top:-120px;right:80px;z-index:1;cursor:pointer;font-size:3.2em;display:none;
+      }
+
+
+
+          .s_no{
+            width:30%;
+          }
+
+          .name{
+            float:left;
+            color:black;
+          }
+
+          .price{
+            float:right;
+            color:black;
+          }
+
+          .detail_items{
+           font-size:1.5em;
+           color:black;
+          }
+
+          #add{
+           float:right;background-color:black;color:white;font-size:0.8em;
+          }
+
+          #no_of{
+           width:35px;
+          }
+
+          #label_name{
+           font-size:1.2em;
+          }
+
+
+         #form{
+             display:flex;
+             justify-content:center;
+             align-items:center;
+         }
+
+
+         .order{
+           border:0.2px solid grey;
+           width:32%;
+           height:780px;
+           float:left;
+           margin-right:5px;
+         }
+
+  </style>
+  <body>
+
+
+
+ <div  class="container1" >
+  <img id="fire1" src="/50.gif" >
+  <div id="bresca" >BRESCA</div>
+  <img id="fire2" src="/50.gif" >
+  <div class="er" >
+  <ul>
+  <li style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></li>
+  <li ><a href="/menu" id="detail10" >Menu</a></li>
+  <li ><a href="/about" id="detail10" >About</a></li>
+  <li ><a href="/gift" id="detail10" >Gift-Cards</a></li>
+  <li ><a href="/private" id="detail10" >Private-Event</a></li>
+  <li ><a href="/location" id="detail10" >Location</a></li>
+    <li ><a href="/" id="detail10"  >Home</a></li>
+  </ul>
+ </div>
+
+<div id="extent">
+ <div id="line" >
+  &equiv;
+ </div>
+ <div id="cross" >
+  &#10060;
+ </div>
+ <div id="expand" >
+  <p style="opacity:1;line-height:3"><a href="/order" id="order_now" style="text-decoration:none;color:#FFFFFF;background-color:#db8f31;font-size:1.7em">Order-Now</a></p>
+  <p><a href="/menu" class="detail" id="d1" >Menu</a></p>
+  <p><a href="/about" class="detail" id="d2">About</a></p>
+  <p><a href="/gift" class="detail" id="d3" >Gift-Cards</a></p>
+  <p><a href="/private" class="detail" id="d4">Private-Event</a></p>
+  <p><a href="/location" class="detail" id="d5" >Location</a></p>
+  <p><a href="/" class="detail"  id="d6" >Home</a></p>
+  </div>
+ </div>
+
+</div>
+
+
+<br/>
+
+    <div class="order">
+     <h2 style="text-align:center">Submit Order</h2>
+      <br/>
+      <br/>
+
+     <div id="form">
+      <form id="foodorder" method="post" action="/order">
+
+          <label class="fill" for="name">Name:</label>&nbsp;
+          <input type="text" name="name" id="name">
+
+          <br/>
+
+          <label class="fill" for="contact">Contact:</label>&nbsp;
+          <input type="number" name="contact" id="contact">
+
+          <br/>
+
+
+          <label class="fill" for="line1">line1:</label>&nbsp;
+          <input type="text" name="line1" id="line1">
+
+          <br/>
+
+          <label class="fill" for="code">Postal-Code:</label>&nbsp;
+          <input type="number" name="code" id="code">
+
+          <br/>
+
+          <label  class="fill" for="city">City:</label>&nbsp;
+          <input type="text" name="city" id="city">
+
+          <br/>
+
+          <label class="fill" for="state">State:</label>&nbsp;
+          <input type="text" name="state" id="state">
+
+          <br/>
+
+          <label class="fill" for="country">Country:</label>&nbsp;
+          <input type="text" name="country" id="country">
+
+           <br/>
+
+          <label class="fill" for="amount">Amount:</label>&nbsp;
+          <input type="text" name="amount" id="amount" value="<%= order %>" readonly>
+
+
+           <br/>
+           <br/>
+
+          <script
+          src="http://checkout.stripe.com/checkout.js"
+          class="stripe-button"
+          data-key="<%= stripePublishableKey %>"
+          data-amount="<%= order %>"
+          data-name="ORDER"
+          data-description="Food BY Bresca"
+          data-image="http://stripe.com/img/documentation/checkout/marketplace.png"
+          data-locale="auto">
+          </script>
+
+      </form>
+     </div>
+
+      <br/>
+<!--
+      <div id="note">
+        <%if( typeof err== 'undefined'){
+         %> <img src="/pack.gif" style="height:100%;width:100%">
+         <%}
+        %>
+
+   <%if( typeof err!= 'undefined'){%>
+   <h2 style="margin-top:115px;color:black;background-color:red">
+   <%= err %>
+   </h2>
+   <%}
+  %>
+-->
+
+
+     </div>
+
+    </div>
+
+
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" ></script>
+    <script type="text/javascript">
+
+      const amount = window.location.href.split("?")[1].split(":")[1];
+      document.getElementById("amount").value = amount;
+
+
+      fetch('/accept' ,{
+        method:'POST'
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        console.log(data);
+      })
+
+      document.getElementById('foodorder').children[25].setAttribute("data-amount",amount);
+      document.getElementById('foodorder').children[25].setAttribute("data-key",key);
+
+    </script>
+
+
+  </body>
+
+</html>

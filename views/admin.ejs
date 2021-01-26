@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form id="subscribe">
+        
+     <input id="name" type="text">
+     <input type="submit">    
+        
+    </form>
+ 
+<script>  
+
+    
+    document.getElementById("subscribe").addEventListener('submit' , submitform);
+
+    function submitform(e){
+        
+        e.preventDefault();
+        
+        const name = document.querySelector("#name").value;
+        
+    
+        
+        fetch('/do' , {
+           method:"POST",
+           enctype:"multipart/form-data",
+           headers:{
+            'Accept':'application/json , text/plain , */*',
+            'Content-type':'application/json'
+           },
+           body:JSON.stringify({name:name})
+            
+        }).then(res=> {
+            console.log(res);
+            return res.json()
+        })
+
+        
+ }
+ 
+    </script>
+</body>
+
+</html>
