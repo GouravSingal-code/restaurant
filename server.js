@@ -30,7 +30,7 @@ const options = {
 };
 
 
-var url = process.env.MONGODB_URI || 'mongodb://localhost:27017/gourav';
+var url = process.env.CONNECTION_STRING || 'mongodb://localhost:27017/gourav';
 var mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/gourav';
 
 mongoose.connect(url , options );
